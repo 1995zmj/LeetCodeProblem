@@ -7,20 +7,13 @@ using namespace std;
 int main()
 {
 	Solution temp;
-	int tempInput;
-	string tempOutput;
+	string tempInput;
+	int tempOutput;
 	while (true)
 	{
 		cin >> tempInput;
-		if (temp.isPalindrome(tempInput))
-		{
-			tempOutput = "true";
-		}
-		else
-		{
-			tempOutput = "false";
-		}
-		cout << tempOutput;
+		tempOutput = temp.romanToInt(tempInput);
+		cout << tempOutput << endl;
 	}
 }
 
